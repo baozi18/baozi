@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.js"></script>
+		<script src="js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app"></div>
+	</body>
+
+	<script>
+		var data = { a : 1 }
+		var app = new Vue({
+			data:data
+		})
+		app.a == data.a
+
+		app.a = 2
+		console.log(data.a)
+
+		data.a = 5
+		console.log(app.a)
+
+	</script>
+</html>
